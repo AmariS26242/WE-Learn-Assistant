@@ -1,0 +1,28 @@
+# WE-Learn-Assistant 配置示例
+# 复制本文件为 config/config.yaml 后按需修改；请勿将本地配置文件或敏感信息提交到版本库。
+
+app:
+  name: "WE-Learn-Assistant"
+  log_level: "INFO"
+  data_dir: "data"
+  screenshot_dir: "screenshots"
+
+database:
+  path: "data/we_learn_assistant.db"
+
+web:
+  browser: "msedge"
+  headless: false
+  timeout_ms: 15000
+  cdp_endpoint: ""
+  target_url: "https://welearn.sflep.com/"
+
+android:
+  adb_path: "adb"
+  command_timeout_sec: 10
+  screenshot_remote_path: "/sdcard/we_learn_screen.png"
+  ui_dump_remote_path: "/sdcard/we_learn_ui.xml"
+
+safety:
+  mask_logs: true
+  allow_credential_autofill: false
